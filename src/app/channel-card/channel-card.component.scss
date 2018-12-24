@@ -1,0 +1,13 @@
+.title {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.card {
+  width: 100px;
+  height: 100px;
+}
+.thumbnail {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
