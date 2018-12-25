@@ -20,6 +20,12 @@ export class Channel {
     public color: string,
     public category: string,
   ) {}
+
+  static filter(channels: Channel[], category: string): Channel[] {
+    return category
+      ? channels.filter(item => item.category == category)
+      : channels;
+  }
 }
 
 /**
