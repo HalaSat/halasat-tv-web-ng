@@ -1,0 +1,11 @@
+<div>
+  <label>{{ category }}</label>
+  <div class="row-container">
+    <div class="row" *ngIf="channels">
+      <app-channel-card
+        *ngFor="let channel of channels"
+        [data]="channel"
+      ></app-channel-card>
+    </div>
+  </div>
+</div>

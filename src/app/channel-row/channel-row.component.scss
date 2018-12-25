@@ -1,0 +1,23 @@
+// .row-container {
+//   display: inline-block;
+// }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #f9f9f9;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+label {
+  // display: block;
+  margin: 10px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+app-channel-card {
+  // margin: 10px;
+}

@@ -10,7 +10,7 @@ import {
 } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-// import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { OwlModule } from 'ngx-owl-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +18,7 @@ import { ChannelCardComponent } from './channel-card/channel-card.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ChannelsComponent } from './channels/channels.component';
 import { ChannelRowComponent } from './channel-row/channel-row.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ChannelRowComponent } from './channel-row/channel-row.component';
     ToolbarComponent,
     ChannelsComponent,
     ChannelRowComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,7 @@ import { ChannelRowComponent } from './channel-row/channel-row.component';
     MatRippleModule,
     MatIconModule,
     MatToolbarModule,
-    // SlickCarouselModule,
+    OwlModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

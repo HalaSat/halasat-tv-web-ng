@@ -8,9 +8,14 @@ import { Channel } from '../core/channel.model';
   styleUrls: ['./channel-row.component.scss'],
 })
 export class ChannelRowComponent implements OnInit {
-  @Input() channels: Channel[];
+  @Input() allChannels: Channel[];
   @Input() category: string;
+  channels: Channel[];
+
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.channels = Channel.filter(this.allChannels, this.category);
+    console.log(this.channels);
+  }
 }

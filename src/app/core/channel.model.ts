@@ -21,6 +21,14 @@ export class Channel {
     public category: string,
   ) {}
 
+  /**
+   * Filter the channels based on their category.
+   * @param channels - channels array to filter
+   * @param category - category string to filter the channels with. Must be one of
+   * these categories `['Entertainment', 'Movies', 'Kids', 'Series', 'Sports', 'Music']`,
+   *  if empty the function returns all the channels
+   * @author Mohammed Salman
+   */
   static filter(channels: Channel[], category: string): Channel[] {
     return category
       ? channels.filter(item => item.category == category)
