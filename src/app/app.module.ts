@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatButtonModule,
-  MatCheckboxModule,
+  MatRippleModule,
   MatIconModule,
   MatToolbarModule,
 } from '@angular/material';
@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { ChannelCardComponent } from './channel-card/channel-card.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ChannelsComponent } from './channels/channels.component';
+import { ChannelRowComponent } from './channel-row/channel-row.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ChannelsComponent } from './channels/channels.component';
     ChannelCardComponent,
     ToolbarComponent,
     ChannelsComponent,
+    ChannelRowComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,9 +32,10 @@ import { ChannelsComponent } from './channels/channels.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatCheckboxModule,
+    MatRippleModule,
     MatIconModule,
     MatToolbarModule,
+    SlickCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,10 +1,11 @@
+.card {
+  width: 200px;
+  cursor: pointer;
+}
 .title {
+  margin: 5px 0;
   word-wrap: break-word;
   overflow-wrap: break-word;
-}
-.card {
-  width: 100px;
-  height: 100px;
 }
 .thumbnail {
   width: 100%;
