@@ -1,5 +1,15 @@
-mat-toolbar {
-  #halasat-tv {
-    margin-left: 10px;
-  }
+#halasat-tv {
+  margin-left: 10px;
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+#cinema-icon,
+#share-icon {
+  // margin-right: 5px;
+}
+
+#halasat-cinema-link {
+  margin-right: 5px;
 }

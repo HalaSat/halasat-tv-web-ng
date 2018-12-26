@@ -1,16 +1,4 @@
 <div id="body-container">
-  <!-- <owl-carousel
-    [options]="{ items: 3, dots: false, navigation: false }"
-    [items]="images"
-    [carouselClasses]="['owl-theme', 'row', 'sliding']"
-  >
-    <div class="item" *ngFor="let image of images; let i = index">
-      <div
-        class="thumbnail-image"
-        [ngStyle]="{'background': 'url('abc.jpg') no-repeat scroll center center / 80px 80px'}"
-      ></div>
-    </div>
-  </owl-carousel> -->
   <app-channel-row
     *ngFor="let category of categories"
     [allChannels]="channels"
