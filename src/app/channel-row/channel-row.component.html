@@ -1,11 +1,15 @@
-<div>
-  <label>{{ category }}</label>
+<!-- <div>
+
   <div class="row-container">
     <div class="row" *ngIf="channels">
-      <app-channel-card
-        *ngFor="let channel of channels"
-        [data]="channel"
-      ></app-channel-card>
+      <app-channel-card *ngFor="let channel of channels" [data]="channel"></app-channel-card>
     </div>
   </div>
+</div> -->
+
+<div class="row" *ngIf="channels">
+    <label>{{ category }}</label>
+<owl-carousel [options]="{items: 5, dots: true, navigation: true, autoplay: true, loop: true}" [items]="channels" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+  <app-channel-card *ngFor="let channel of channels" [data]="channel"></app-channel-card>
+</owl-carousel>
 </div>
