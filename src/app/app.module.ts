@@ -19,6 +19,16 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ChannelsComponent } from './channels/channels.component';
 import { ChannelRowComponent } from './channel-row/channel-row.component';
 import { FooterComponent } from './footer/footer.component';
+import { PlayerComponent } from './player/player.component';
+
+// Videogular 2 Modules
+import {VgCoreModule} from 'videogular2/core';
+import {VgControlsModule} from 'videogular2/controls';
+import {VgOverlayPlayModule} from 'videogular2/overlay-play';
+import {VgBufferingModule} from 'videogular2/buffering';
+import { VgStreamingModule } from 'videogular2/streaming';
+
+
 
 @NgModule({
   declarations: [
@@ -27,7 +37,8 @@ import { FooterComponent } from './footer/footer.component';
     ToolbarComponent,
     ChannelsComponent,
     ChannelRowComponent,
-    FooterComponent
+    FooterComponent,
+    PlayerComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +51,12 @@ import { FooterComponent } from './footer/footer.component';
     MatRippleModule,
     MatIconModule,
     MatToolbarModule,
-    OwlModule
+    OwlModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule,
+    VgStreamingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
