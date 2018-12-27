@@ -164,7 +164,8 @@ export class VgMedia implements OnInit, OnDestroy, IPlayable {
 
         this.canPlayAllSubscription = combineLatest(canPlayAll,
             (...params) => {
-                let allReady: boolean = params.some(event => event.target.readyState === 4);
+                let allReady: boolean = true
+                //params.some(event => event.target.readyState === 4);
 
                 if (allReady && !this.syncSubscription) {
                     this.startSync();
