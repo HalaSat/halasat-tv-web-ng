@@ -27,6 +27,8 @@ import {VgControlsModule} from '../../videogular2/controls';
 import {VgOverlayPlayModule} from '../../videogular2/overlay-play';
 import {VgBufferingModule} from '../../videogular2/buffering';
 import { VgStreamingModule } from '../../videogular2/streaming';
+import { ChannelPlayerComponent } from './channel-player/channel-player.component';
+import { ChannelColumnComponent } from './channel-column/channel-column.component';
 
 
 
@@ -38,7 +40,9 @@ import { VgStreamingModule } from '../../videogular2/streaming';
     ChannelsComponent,
     ChannelRowComponent,
     FooterComponent,
-    PlayerComponent
+    PlayerComponent,
+    ChannelPlayerComponent,
+    ChannelColumnComponent
   ],
   imports: [
     BrowserModule,

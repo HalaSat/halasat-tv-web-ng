@@ -1,17 +1,30 @@
-<vg-player [ngStyle]="{'width':'500px'}" (onPlayerReady)="onPlayerInit($event)">
+<vg-player id="player" (onPlayerReady)="onPlayerInit($event)">
   <vg-overlay-play vgFor="hs-tv"></vg-overlay-play>
   <vg-controls>
     <vg-play-pause vgFor="hs-tv"></vg-play-pause>
     <vg-scrub-bar vgFor="hs-tv">
       <vg-scrub-bar-current-time vgFor="hs-tv"></vg-scrub-bar-current-time>
     </vg-scrub-bar>
-    <vg-time-display vgFor="hs-tv" [vgProperty]="'current'" [vgFormat]="'mm:ss'"></vg-time-display>
-    <vg-quality-selector [bitrates]="videoBitrates" (onBitrateChange)="vgHls.setBitrate($event)">
+    <vg-time-display
+      vgFor="hs-tv"
+      [vgProperty]="'current'"
+      [vgFormat]="'mm:ss'"
+    ></vg-time-display>
+    <vg-quality-selector
+      [bitrates]="videoBitrates"
+      (onBitrateChange)="vgHls.setBitrate($event)"
+    >
     </vg-quality-selector>
     <vg-volume vgFor="hs-tv"></vg-volume>
     <vg-fullscreen></vg-fullscreen>
   </vg-controls>
-  <video #media #vgHls="vgHls" [vgMedia]="media" [vgHls]="'http://192.168.37.2:1935/bein1/1_adaptive.m3u8'" id="hs-tv"
-    (onGetBitrates)="setBitrates($event)" autoplay>
-  </video>
+  <video
+    #media
+    #vgHls="vgHls"
+    [vgMedia]="media"
+    [vgHls]="url"
+    id="hs-tv"
+    (onGetBitrates)="setBitrates($event)"
+    autoplay
+  ></video>
 </vg-player>

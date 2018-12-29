@@ -1,0 +1,10 @@
+<div id="channel-player">
+  <div id="player-container-container" *ngIf="channel">
+    <div id="player-container">
+      <app-player [channel]="channel"> </app-player>
+    </div>
+  </div>
+  <div id="channel-column" *ngIf="channels">
+    <app-channel-column [channels]="channels"></app-channel-column>
+  </div>
+</div>

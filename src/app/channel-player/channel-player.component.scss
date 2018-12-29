@@ -1,0 +1,29 @@
+#channel-player {
+  display: flex;
+}
+
+#player-container-container {
+  flex-shrink: 1;
+  flex: 2;
+  // max-width: 1080px;
+}
+
+#channel-column {
+  position: relative;
+  flex: 1;
+}
+
+app-channel-column {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+
+#player-container {
+  position: relative;
+  background: #000;
+  padding-top: 56.25%;
+}

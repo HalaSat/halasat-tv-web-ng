@@ -1,17 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { BitrateOption, VgAPI } from '../../../videogular2/core';
+
+import { Channel } from '../core/channel.model';
 
 @Component({
   selector: 'app-player',
   templateUrl: './player.component.html',
-  styleUrls: ['./player.component.scss']
+  styleUrls: ['./player.component.scss'],
 })
 export class PlayerComponent implements OnInit {
   videoBitrates: BitrateOption[];
   videoApi: VgAPI;
-  constructor() { }
+  @Input() channel: Channel;
+  url: string;
+  constructor() {}
 
   ngOnInit() {
+    this.url = `http://192.168.37.2:1935/${this.channel.app}/${
+      this.channel.streamName
+    }_adaptive.m3u8`;
   }
 
   setBitrates(recivedBitrates: BitrateOption[]) {
@@ -22,6 +29,5 @@ export class PlayerComponent implements OnInit {
 
   onPlayerInit(api: VgAPI) {
     this.videoApi = api;
-}
-
+  }
 }
