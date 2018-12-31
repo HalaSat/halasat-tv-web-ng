@@ -1,16 +1,22 @@
 #channel-player {
   display: flex;
+  max-width: 1600px;
+  margin: auto;
+  background: #f2f2f2;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #player-container-container {
   flex-shrink: 1;
-  flex: 2;
+  flex: 1;
   // max-width: 1080px;
 }
 
 #channel-column {
   position: relative;
-  flex: 1;
+  // flex: 1;
+  padding: 10px;
+  width: 225px;
 }
 
 app-channel-column {

@@ -1,13 +1,19 @@
+#logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: #2196f3;
+  height: 90%;
+  font-size: 1.3rem;
+}
+
 #halasat-tv {
   margin-left: 10px;
 }
 
 .fill-remaining-space {
   flex: 1 1 auto;
-}
-#cinema-icon,
-#share-icon {
-  // margin-right: 5px;
 }
 
 #halasat-cinema-link {
