@@ -1,6 +1,6 @@
 <div class="row" *ngIf="channels">
     <label>{{ category }}</label>
-<owl-carousel [options]="{items: 5, dots: true, navigation: true, autoplay: true, loop: category !='Kids' && category !='Music'  ? true: false}" [items]="channels" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+<owl-carousel [options]="{responsive: owlRspObject,margin:5,nav:true, dots: false, navigation: true, autoplay: true, loop: category !='Kids' && category !='Music'  ? true: false}" [items]="channels" [carouselClasses]="['owl-theme', 'row', 'sliding']">
   <app-channel-card *ngFor="let channel of channels" [data]="channel"></app-channel-card>
 </owl-carousel>
 </div>
