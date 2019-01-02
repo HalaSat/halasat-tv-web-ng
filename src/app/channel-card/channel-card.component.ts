@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router, ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
+
 
 import { Channel } from '../core/channel.model';
 
@@ -9,7 +11,17 @@ import { Channel } from '../core/channel.model';
 })
 export class ChannelCardComponent implements OnInit {
   @Input() data: Channel;
-  constructor() {}
+  currentChannelId;
 
-  ngOnInit() {}
+  constructor( private router: Router, private activateRoute: ActivatedRoute ) {
+  }
+
+
+
+  cardClicked() {
+    this.router.navigateByUrl('/play/' + this.data.id);
+  }
+
+  ngOnInit() {
+  }
 }

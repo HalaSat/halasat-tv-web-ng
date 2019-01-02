@@ -9,11 +9,11 @@ const routes: Routes = [
   { path: '', redirectTo: 'channels', pathMatch: 'full' },
   { path: 'channel-card', component: ChannelCardComponent },
   { path: 'channels', component: ChannelsComponent },
-  { path: 'play/:id', component: ChannelPlayerComponent },
+  { path: 'play/:id', component: ChannelPlayerComponent,},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes) ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

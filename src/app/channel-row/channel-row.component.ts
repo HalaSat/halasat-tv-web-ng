@@ -33,7 +33,6 @@ export class ChannelRowComponent implements OnInit {
 
   ngOnInit() {
     this.channels = Channel.filter(this.allChannels, this.category);
-    console.log(this.channels);
     this.owlRspObject = {
       0: {
         items: 1,

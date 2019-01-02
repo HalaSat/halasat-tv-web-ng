@@ -1,10 +1,8 @@
-<a routerLink="/play/{{ data.id }}">
-  <div class="card" matRipple>
+<div class="card" matRipple (click)="cardClicked()">
     <img
       class="thumbnail"
       src="http://91.106.32.84/images/{{ data.imageUrl }}"
       alt=""
     />
     <p class="title">{{ data.title }}</p>
-  </div>
-</a>
+</div>

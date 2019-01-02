@@ -15,18 +15,21 @@ export class ChannelPlayerComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private channelService: ChannelService,
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.channelService.getChannels().subscribe(channels => {
       this.channels = channels;
-      this.setChannel();
     });
+    this.route.params.subscribe( (params) => {
+      this.setChannel(params['id']);
+    });
+
   }
-  setChannel() {
-    const id = +this.route.snapshot.paramMap.get('id');
-    this.channels.forEach(channel => {
-      if (channel.id === id) this.channel = channel;
-    });
+  setChannel( id) {
+   this.channel = this.channels.find((channel) => {
+     return channel.id == id;
+   }
+   );
   }
 }
