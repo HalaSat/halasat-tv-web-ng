@@ -1,7 +1,9 @@
+<div *ngIf="channels">
 <div id="body-container">
   <app-channel-row
     *ngFor="let category of categories"
     [allChannels]="channels"
     [category]="category"
   ></app-channel-row>
+</div>
 </div>

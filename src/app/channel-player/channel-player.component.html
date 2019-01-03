@@ -1,4 +1,4 @@
-<div id="channel-player">
+<div id="channel-player" *ngIf="channels">
   <div id="player-container-container" *ngIf="channel">
     <div id="player-container">
       <app-player [channels]="channels"> </app-player>

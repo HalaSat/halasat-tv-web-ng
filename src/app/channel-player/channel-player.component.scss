@@ -1,6 +1,6 @@
 #channel-player {
   display: flex;
-  max-width: 1600px;
+  max-width: 1300px;
   margin: auto;
   background: #f2f2f2;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -32,4 +32,22 @@ app-channel-column {
   position: relative;
   background: #000;
   padding-top: 56.25%;
+}
+
+
+@media (max-width: 800px) {
+  #channel-player {
+    flex-direction: column;
+  }
+  #channel-column {
+    width: auto;
+  }
+  app-channel-column {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+
+  }
 }
