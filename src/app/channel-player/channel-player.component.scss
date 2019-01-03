@@ -4,6 +4,7 @@
   margin: auto;
   background: #f2f2f2;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
 }
 
 #player-container-container {
@@ -34,7 +35,6 @@ app-channel-column {
   padding-top: 56.25%;
 }
 
-
 @media (max-width: 800px) {
   #channel-player {
     flex-direction: column;
@@ -48,6 +48,5 @@ app-channel-column {
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
-
   }
 }
