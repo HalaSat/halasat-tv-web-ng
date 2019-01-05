@@ -19,15 +19,15 @@ export class ChannelService {
    * @author Mohammed Salman
    */
   getChannels(): Observable<Channel[]> {
-    return this.http
-      .get<Channel[]>(this.channelsUrl)
-      .pipe(
-        map((data: any[]) => data.map((item: any) => this.adapter.adapt(item))),
-      );
+    // return this.http
+    //   .get<Channel[]>(this.channelsUrl)
+    //   .pipe(
+    //     map((data: any[]) => data.map((item: any) => this.adapter.adapt(item))),
+    //   );
 
-    // return of(mockChannels).pipe(
-    //   // model the data items to be of type Channel
-    //   map((data: any[]) => data.map((item: any) => this.adapter.adapt(item))),
-    // );
+    return of(mockChannels).pipe(
+      // model the data items to be of type Channel
+      map((data: any[]) => data.map((item: any) => this.adapter.adapt(item))),
+    );
   }
 }
