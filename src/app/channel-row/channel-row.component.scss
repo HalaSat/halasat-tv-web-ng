@@ -12,8 +12,21 @@
 // }
 
 label {
-  // display: block;
-  margin: 10px;
+  position: relative;
+  display: block;
+  margin: 20px;
   font-size: 28px;
   font-weight: 500;
+  text-align: center;
+  color: #666;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50px;
+    height: 2px;
+    background: #1d99ff;
+  }
 }

@@ -23,3 +23,17 @@
 #halasat-share-link {
   color: red;
 }
+
+@media (max-width: 600px) {
+  #logo {
+    font-size: 0.8rem;
+  }
+  #halasat-cinema-link,
+  #halasat-share-link {
+    font-size: 0.5rem;
+  }
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}

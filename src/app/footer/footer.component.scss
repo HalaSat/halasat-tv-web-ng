@@ -1,9 +1,10 @@
 div {
   width: 100%;
   background: #f2f2f2;
-  height: 50px;
+  padding: 10px 5px;
+  box-sizing: border-box;
   text-align: center;
-  line-height: 50px;
+  // line-height: 50px;
 }
 p {
   margin: 0;
@@ -13,3 +14,9 @@ a {
   text-decoration: none;
   color: #4882ff;
 }
+
+// @media (max-width: 600px) {
+//   * {
+//     font-size: 0.5rem;
+//   }
+// }
