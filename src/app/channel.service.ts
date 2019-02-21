@@ -7,10 +7,10 @@ import { mockChannels } from './mock-channels';
 import { Channel, ChannelAdapter } from './core/channel.model';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class ChannelService {
-  private channelsUrl = 'http://tv.halasat.net/api.php';
+  private channelsUrl = 'http://tv.halasat.net/api';
 
   constructor(private http: HttpClient, private adapter: ChannelAdapter) {}
 
@@ -22,12 +22,12 @@ export class ChannelService {
     // return this.http
     //   .get<Channel[]>(this.channelsUrl)
     //   .pipe(
-    //     map((data: any[]) => data.map((item: any) => this.adapter.adapt(item))),
+    //     map((data: any[]) => data.map((item: any) => this.adapter.adapt(item)))
     //   );
 
     return of(mockChannels).pipe(
       // model the data items to be of type Channel
-      map((data: any[]) => data.map((item: any) => this.adapter.adapt(item))),
+      map((data: any[]) => data.map((item: any) => this.adapter.adapt(item)))
     );
   }
 }

@@ -1,9 +1,12 @@
+mat-toolbar {
+  background: #111;
+}
 #logo {
   display: flex;
   flex-direction: row;
   align-items: center;
   text-decoration: none;
-  color: #2196f3;
+  color: #f547bb;
   height: 90%;
   font-size: 1.3rem;
 }
@@ -23,7 +26,7 @@
   color: red;
 }
 #halasat-iptv-link {
-  color: gray;
+  color: rgb(228, 228, 228);
 }
 
 @media (max-width: 600px) {
