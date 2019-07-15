@@ -1,0 +1,40 @@
+http://10.254.253.6:8008/sport/ch1/adaptive.m3u8
+Bien Sport HD1
+http://10.254.253.6:8008/sport/ch2/adaptive.m3u8
+Bien Sport HD2
+http://10.254.253.6:8008/sport/ch3/adaptive.m3u8
+Bien Sport HD3
+http://10.254.253.6:8008/sport/ch4/adaptive.m3u8
+Bien Sport HD4
+http://10.254.253.6:8008/sport/ch5/adaptive.m3u8
+Bien Sport HD5
+http://10.254.253.6:8008/sport/ch6/adaptive.m3u8
+Bien Sport HD6
+http://10.254.253.6:8008/sport/ch7/adaptive.m3u8
+Bien Sport HD7
+http://10.254.253.6:8008/sport/ch8/adaptive.m3u8
+Bien Sport HD8
+http://10.254.253.6:8008/sport/ch9/ch9_720.m3u8
+Bien Sport HD9
+http://10.254.253.6:8008/sport/ch10/adaptive.m3u8
+Bien Sport HD10
+http://10.254.253.6:8008/sport/ch11/adaptive.m3u8
+Bien Sport HD11
+http://10.254.253.6:8008/sport/ch12/adaptive.m3u8
+Bien Sport HD12
+http://10.254.253.6:8008/sport/ch13/adaptive.m3u8
+Bien Sport HD13
+http://10.254.253.6:8008/sport/ch14/adaptive.m3u8
+Box Nation
+http://10.254.253.6:8008/sport/ch15/adaptive.m3u8
+Alkass one HD
+http://10.254.253.6:8008/sport/ch17/adaptive.m3u8
+Alkass three HD
+http://10.254.253.6:8008/sport/ch18/adaptive.m3u8
+Alkass Seven HD
+http://10.254.253.6:8008/sport/ch19/adaptive.m3u8
+Alkass Five HD
+http://10.254.253.6:8008/sport/ch20/adaptive.m3u8
+AD Sport 1
+http://10.254.253.6:8008/sport/ch21/adaptive.m3u8
+AD Sport 2

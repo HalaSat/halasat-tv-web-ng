@@ -1,6 +1,6 @@
 <vg-player id="player" (onPlayerReady)="onPlayerInit($event)">
   <vg-overlay-play vgFor="hs-tv"></vg-overlay-play>
-  <vg-controls>
+  <vg-controls [vgAutohide]="true">
     <vg-play-pause vgFor="hs-tv"></vg-play-pause>
     <vg-scrub-bar vgFor="hs-tv">
       <vg-scrub-bar-current-time vgFor="hs-tv"></vg-scrub-bar-current-time>
@@ -22,7 +22,7 @@
     #media
     #vgHls="vgHls"
     [vgMedia]="media"
-    [vgHls]="url"
+    [vgHls]="channel.url"
     id="hs-tv"
     (onGetBitrates)="setBitrates($event)"
     [autoplay]="true"

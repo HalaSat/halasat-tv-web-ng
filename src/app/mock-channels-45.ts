@@ -53,8 +53,8 @@ export const mockChannels = [
   },
   {
     id: '23',
-    title: 'BEIN SPORTS 4HD',
-    image: 'uploads/bein4.png',
+    title: 'BEIN SPORTS MAX HD',
+    image: 'uploads/max1.png',
     streamname: '4',
     type: '1',
     vorder: '4',
@@ -78,30 +78,17 @@ export const mockChannels = [
     epg: '9'
   },
   {
-    id: '178',
-    title: 'ON SPORT HD',
-    image: 'uploads/onsports.png',
-    streamname: 'ons',
-    type: '0',
-    vorder: '12',
+    id: '210',
+    title: 'Al-KASS Extra HD',
+    image: 'uploads/alkass1.png',
+    streamname: 'beinmax',
+    type: '1',
+    vorder: '5',
     enable: '1',
     cat: 'Sports',
-    color: '',
-    app: 'live',
-    epg: '0'
-  },
-  {
-    id: '26',
-    title: 'OSN YAHALA HD',
-    image: 'uploads/osnyahala.png',
-    streamname: '7',
-    type: '1',
-    vorder: '13',
-    enable: '1',
-    cat: 'Entertainment',
-    color: '#ff0000',
-    app: 'live',
-    epg: '26'
+    color: '#663399',
+    app: 'bein1',
+    epg: '9'
   },
   {
     id: '29',
@@ -325,19 +312,6 @@ export const mockChannels = [
     epg: '0'
   },
   {
-    id: '165',
-    title: 'AD SPORTS 2',
-    image: 'uploads/ads2.png',
-    streamname: 'ad2',
-    type: '0',
-    vorder: '35',
-    enable: '1',
-    cat: 'Sports',
-    color: '#8f8f8f',
-    app: 'nile',
-    epg: '0'
-  },
-  {
     id: '113',
     title: 'AD DRAMA HD',
     image: 'uploads/addrama.png',
@@ -455,19 +429,6 @@ export const mockChannels = [
     epg: '0'
   },
   {
-    id: '179',
-    title: 'ON TV HD',
-    image: 'uploads/ontv.png',
-    streamname: 'ontv',
-    type: '0',
-    vorder: '100',
-    enable: '1',
-    cat: 'Entertainment',
-    color: '',
-    app: 'live',
-    epg: '0'
-  },
-  {
     id: '180',
     title: 'DMC Drama',
     image: 'uploads/dmcdrama.png',
@@ -581,19 +542,6 @@ export const mockChannels = [
     enable: '1',
     cat: 'Movies',
     color: '#4d0000',
-    app: 'nile',
-    epg: '0'
-  },
-  {
-    id: '84',
-    title: 'ROTANA',
-    image: 'uploads/rotana.png',
-    streamname: 'rotana1.stream_360p',
-    type: '0',
-    vorder: '163',
-    enable: '1',
-    cat: 'Music',
-    color: '#006600',
     app: 'nile',
     epg: '0'
   }
