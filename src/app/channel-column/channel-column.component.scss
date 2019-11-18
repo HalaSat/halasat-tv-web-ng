@@ -2,3 +2,41 @@ label {
   display: block;
   margin: 10px;
 }
+
+.columnsal {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.card {
+  width: 200px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  margin: 5px 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #fff;
+}
+.thumbnail {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  background-color: #c83631;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+:host {
+  margin: auto;
+}

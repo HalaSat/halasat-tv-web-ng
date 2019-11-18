@@ -1,4 +1,11 @@
-<app-channel-card
-  *ngFor="let channel of channels"
-  [data]="channel"
-></app-channel-card>
+<div class="columnsal">
+  <div
+    *ngFor="let channel of channels"
+    class="card"
+    matRipple
+    (click)="cardClicked(channel)"
+  >
+    <img class="thumbnail" src="{{ channel.image }}" alt="" />
+    <!-- <p class="title">{{ channel.name }}</p> -->
+  </div>
+</div>

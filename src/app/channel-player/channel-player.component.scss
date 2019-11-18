@@ -41,7 +41,9 @@ app-channel-column {
     flex-direction: column;
   }
   #channel-column {
-    width: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
   }
   app-channel-column {
     position: relative;

@@ -6,9 +6,23 @@ mat-toolbar {
   flex-direction: row;
   align-items: center;
   text-decoration: none;
-  color: #f547bb;
+  color: white;
   height: 90%;
   font-size: 1.3rem;
+}
+
+.divider {
+  display: inline-block;
+  background-color: white;
+  width: 1px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.beta {
+  padding-top: 15px;
+  font-size: 0.6rem;
+  color: #ddb747;
 }
 
 #halasat-tv {
@@ -20,13 +34,13 @@ mat-toolbar {
 }
 
 #halasat-cinema-link {
-  color: rgb(0, 211, 105);
+  color: white;
 }
 #halasat-share-link {
-  color: red;
+  color: white;
 }
 #halasat-iptv-link {
-  color: rgb(228, 228, 228);
+  color: white;
 }
 
 @media (max-width: 600px) {

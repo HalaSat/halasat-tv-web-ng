@@ -1,37 +1,30 @@
 <mat-toolbar>
   <a id="logo" routerLink="/" mat-button>
-    <img src="../../assets/icon.png" alt="" width="36" height="36" />
-    <span id="halasat-tv">SHASHETY TV</span>
+    <img class="logo-image" src="../../assets/logo.png" alt="" height="36" />
+    <span class="divider"></span>
+    <span id="halasat-tv">LIVE TV</span>
+    <sub class="beta">BETA</sub>
   </a>
   <span class="fill-remaining-space"></span>
   <a
     id="halasat-cinema-link"
     color="link"
     mat-button
-    href="http://halasat.vodu.me"
+    href="/android.apk"
     target="_blank"
   >
-    <mat-icon>theaters</mat-icon>
-    VODU
+    <mat-icon>android</mat-icon>
+    ANDROID APK
   </a>
-  <a
-    id="halasat-share-link"
-    mat-button
-    color="link"
-    href="http://share.halasat.net"
-    target="_blank"
-  >
-    <mat-icon>backup</mat-icon>
-    SHARE
-  </a>
+  <div></div>
   <a
     id="halasat-iptv-link"
     mat-button
     color="link"
-    href="http://tv.halasat.net/iptv.zip"
+    href="/iptv.zip"
     target="_blank"
   >
-    <mat-icon>folder</mat-icon>
+    <mat-icon>tv</mat-icon>
     IPTV
   </a>
 </mat-toolbar>

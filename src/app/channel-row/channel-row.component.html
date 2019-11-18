@@ -1,6 +1,13 @@
 <div class="row" *ngIf="channels">
   <label>{{ category }}</label>
-  <owl-carousel
+  <div class="cards-container">
+    <app-channel-card
+      *ngFor="let channel of channels"
+      [data]="channel"
+    ></app-channel-card>
+  </div>
+
+  <!-- <owl-carousel
     [options]="{
       responsive: owlRspObject,
       margin: 5,
@@ -16,5 +23,5 @@
       *ngFor="let channel of channels"
       [data]="channel"
     ></app-channel-card>
-  </owl-carousel>
+  </owl-carousel> -->
 </div>

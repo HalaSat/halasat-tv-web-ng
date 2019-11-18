@@ -1,4 +1,4 @@
-<vg-player id="player" (onPlayerReady)="onPlayerInit($event)">
+<!-- <vg-player id="player" (onPlayerReady)="onPlayerInit($event)">
   <vg-overlay-play vgFor="hs-tv"></vg-overlay-play>
   <vg-controls [vgAutohide]="true">
     <vg-play-pause vgFor="hs-tv"></vg-play-pause>
@@ -27,4 +27,5 @@
     (onGetBitrates)="setBitrates($event)"
     [autoplay]="true"
   ></video>
-</vg-player>
+</vg-player> -->
+<video preload="none" id="player" autoplay controls crossorigin></video>

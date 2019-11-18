@@ -1,5 +1,6 @@
-import { Injectable } from '@angular/core'
-import { Adapter } from './adapter'
+import { Injectable } from "@angular/core";
+import { Adapter } from "./adapter";
+import { IMAGE_BASE } from "../constants";
 
 /**
  * Channel Model
@@ -13,8 +14,12 @@ export class Channel {
     public name: string,
     public url: string,
     public category: string,
-    public cat: string
-  ) {}
+    image: string
+  ) {
+    this.image = IMAGE_BASE + "/" + image;
+  }
+
+  public image;
 
   /**
    * Filter the channels based on their category.
@@ -27,7 +32,7 @@ export class Channel {
   static filter(channels: Channel[], category: string): Channel[] {
     return category
       ? channels.filter(item => item.category == category)
-      : channels
+      : channels;
   }
 }
 
@@ -36,7 +41,7 @@ export class Channel {
  * @author Mohammed Salman
  */
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class ChannelAdapter implements Adapter<Channel> {
   adapt(item: any): Channel {
@@ -46,7 +51,7 @@ export class ChannelAdapter implements Adapter<Channel> {
       item.name,
       item.url,
       item.category,
-      item.cat
-    )
+      item.image
+    );
   }
 }
