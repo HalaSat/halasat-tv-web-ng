@@ -1,31 +1,3 @@
-<!-- <vg-player id="player" (onPlayerReady)="onPlayerInit($event)">
-  <vg-overlay-play vgFor="hs-tv"></vg-overlay-play>
-  <vg-controls [vgAutohide]="true">
-    <vg-play-pause vgFor="hs-tv"></vg-play-pause>
-    <vg-scrub-bar vgFor="hs-tv">
-      <vg-scrub-bar-current-time vgFor="hs-tv"></vg-scrub-bar-current-time>
-    </vg-scrub-bar>
-    <vg-time-display
-      vgFor="hs-tv"
-      [vgProperty]="'current'"
-      [vgFormat]="'mm:ss'"
-    ></vg-time-display>
-    <vg-quality-selector
-      [bitrates]="videoBitrates"
-      (onBitrateChange)="vgHls.setBitrate($event)"
-    >
-    </vg-quality-selector>
-    <vg-volume vgFor="hs-tv"></vg-volume>
-    <vg-fullscreen></vg-fullscreen>
-  </vg-controls>
-  <video
-    #media
-    #vgHls="vgHls"
-    [vgMedia]="media"
-    [vgHls]="channel.url"
-    id="hs-tv"
-    (onGetBitrates)="setBitrates($event)"
-    [autoplay]="true"
-  ></video>
-</vg-player> -->
-<video preload="none" id="player" autoplay controls crossorigin></video>
+<video-js  id="vid1" width="600" height="300" class="vjs-default-skin" controls>
+
+</video-js>
